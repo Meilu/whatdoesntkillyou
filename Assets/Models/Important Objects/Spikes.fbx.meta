@@ -1,16 +1,46 @@
 fileFormatVersion: 2
-guid: 0f764a3f85dd23b4786d4bb8c6dd3795
+guid: 6fe983c8765d1954f8b13e7d1f17a23a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: phong1
+    100000: pCube1
+    100002: pCube2
+    100004: pCube3
+    100006: pCube4
+    100008: pCube5
+    100010: pCube6
+    100012: pCube7
+    100014: pCube8
+    100016: //RootNode
+    100018: transform1
+    100020: transform2
+    100022: transform3
+    100024: transform4
+    100026: transform5
+    100028: transform6
+    100030: transform7
+    400000: pCube1
+    400002: pCube2
+    400004: pCube3
+    400006: pCube4
+    400008: pCube5
+    400010: pCube6
+    400012: pCube7
+    400014: pCube8
+    400016: //RootNode
+    400018: transform1
+    400020: transform2
+    400022: transform3
+    400024: transform4
+    400026: transform5
+    400028: transform6
+    400030: transform7
+    2100000: phong3
     2100002: phong2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
-    4300002: pCube2
+    2100004: phong4
+    2300000: pCube8
+    3300000: pCube8
+    4300000: pCube8
   externalObjects: {}
   materials:
     importMaterials: 1

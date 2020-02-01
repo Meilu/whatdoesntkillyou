@@ -7,14 +7,27 @@ ModelImporter:
     100002: curve1
     100004: extrudedSurface1
     100006: nurbsCircle1
+    100008: extrudedSurface2
+    100010: extrudedSurface3
+    100012: transform1
+    100014: transform2
     400000: //RootNode
     400002: curve1
     400004: extrudedSurface1
     400006: nurbsCircle1
+    400008: extrudedSurface2
+    400010: extrudedSurface3
+    400012: transform1
+    400014: transform2
     2100000: phong1
+    2100002: phong2
+    2100004: phong3
     2300000: extrudedSurface1
+    2300002: extrudedSurface3
     3300000: extrudedSurface1
+    3300002: extrudedSurface3
     4300000: extrudedSurface1
+    4300002: extrudedSurface3
   externalObjects: {}
   materials:
     importMaterials: 1

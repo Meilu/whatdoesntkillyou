@@ -10,12 +10,14 @@ public class CharacterMovement : MonoBehaviour
 
     private bool _airTime;
     private Rigidbody _rigidBody;
+    private Animator _animator;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
-        
+        _animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -24,19 +26,23 @@ public class CharacterMovement : MonoBehaviour
         //als er niet gejumpt wordt links of rechts wandelen
         if (!_airTime)
         {
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+          if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
-                _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
+              // transform.rotation
+              _animator.Play("walk");
+              _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
             }
             // naar rechts verwerken
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
-                _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
+              _animator.Play("walk");
+              _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
             }
 
             //if jump dan springen
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                _animator.Play("jump");
                 _rigidBody.AddForce(Vector3.up * jumpFactor, ForceMode.Impulse);
                 _airTime = true;
             }
