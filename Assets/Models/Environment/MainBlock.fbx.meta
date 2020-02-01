@@ -1,15 +1,25 @@
 fileFormatVersion: 2
-guid: 0f764a3f85dd23b4786d4bb8c6dd3795
+guid: 309b5ce12b53ac74ab565a14443dbd9f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: phong1
-    2100002: phong2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
+    100000: extrudedSurface1
+    100002: //RootNode
+    100004: pCube17
+    100006: pCube18
+    100008: transform87
+    100010: transform88
+    400000: extrudedSurface1
+    400002: //RootNode
+    400004: pCube17
+    400006: pCube18
+    400008: transform87
+    400010: transform88
+    2100000: phong2
+    2100002: phong3
+    2300000: pCube18
+    3300000: pCube18
+    4300000: pCube18
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,7 +51,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 50
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
