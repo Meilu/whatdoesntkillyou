@@ -23,45 +23,44 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var rotationInY = transform.rotation.y;
+
         //als er niet gejumpt wordt links of rechts wandelen
-        if (!_airTime)
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-          if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            {
-              // transform.rotation
-              _animator.Play("walk");
-              _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
-            }
-            // naar rechts verwerken
-            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
-              _animator.Play("walk");
-              _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
-            }
+            if (rotationInY > 0)
+                rotationInY *= -1;
 
-            //if jump dan springen
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                _animator.Play("jump");
-                _rigidBody.AddForce(Vector3.up * jumpFactor, ForceMode.Impulse);
-                _airTime = true;
-            }
+            transform.rotation = new Quaternion(transform.rotation.x, rotationInY, transform.rotation.z, transform.rotation.w);
+            // transform.rotation
+            _animator.Play("walk");
+            _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
+            return;
+        }
+        // naar rechts verwerken
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            if (rotationInY < 0)
+                rotationInY *= -1;
+
+            transform.rotation = new Quaternion(transform.rotation.x, rotationInY, transform.rotation.z, transform.rotation.w);
+
+            _animator.Play("walk");
+            _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
+            return;
         }
 
-        //als er wel gejumped wordt links en rechts als impuls verwerken
-        if(_airTime)
+        //if jump dan springen
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //sprong naar links verwerken
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            {
-                _rigidBody.AddForce(Vector3.left * jumpLeftRightFactor, ForceMode.Impulse);
-            }
-            //sprong naar rechts verwerken
-            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
-                _rigidBody.AddForce(Vector3.right * jumpLeftRightFactor, ForceMode.Impulse);
-            }
+            _animator.Play("jump");
+            _rigidBody.AddForce(Vector3.up * jumpFactor, ForceMode.Impulse);
+            _airTime = true;
+            return;
         }
+
+
+        _animator.Play("Idle");
     }
 
     private void OnCollisionEnter(Collision collision)
