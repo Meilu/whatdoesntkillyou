@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] float speed = 0.3f;
+    [SerializeField] float speed = 0.7f;
     [SerializeField] float jumpFactor = 8.0f;
     [SerializeField] float jumpLeftRightFactor = 0.3f;
 
@@ -21,14 +21,19 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //links en rechts ophalen
-        float moveInput = Input.GetAxisRaw("Horizontal");
-
         //als er niet gejumpt wordt links of rechts wandelen
         if (!_airTime)
         {
-            Vector3 nieuwePositie = transform.position + (transform.right * moveInput) * speed;
-            _rigidBody.MovePosition(nieuwePositie);
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
+            }
+            //sprong naar rechts verwerken
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
+            }
+
             //if jump dan springen
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -36,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
                 _airTime = true;
             }
         }
+
         //als er wel gejumped wordt links en rechts als impuls verwerken
         if(_airTime)
         {
@@ -54,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //er kan weer gestuurd worden
+        //besturing na landing aanpassen
         _airTime = false;
     }
 }
