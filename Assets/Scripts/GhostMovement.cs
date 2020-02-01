@@ -9,7 +9,8 @@ public class GhostMovement : MonoBehaviour
     private Rigidbody _rigidBody;
     private Rigidbody _bodyPart;
     private bool holdBodypart;
-    
+    private HingeJoint hj;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -37,19 +38,16 @@ public class GhostMovement : MonoBehaviour
         //beweging omlaag
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-           // if (!holdBodypart)
-            {
-                _rigidBody.AddForce(Vector3.down * speed, ForceMode.Impulse); 
-            }
-           
+            _rigidBody.AddForce(Vector3.down * speed, ForceMode.Impulse);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             //bodpart loslaten
             holdBodypart = false;
-            _bodyPart.transform.parent = null;
-            _bodyPart.isKinematic = false;
-            _bodyPart.useGravity = true;
+            Destroy(hj);
+            //_bodyPart.transform.parent = null;
+            //_bodyPart.isKinematic = false;
+            //_bodyPart.useGravity = true;
         }
     }
 
@@ -61,20 +59,12 @@ public class GhostMovement : MonoBehaviour
             if (!holdBodypart)
             {
                 _bodyPart = collision.gameObject.GetComponent<Rigidbody>();
-
-                var hj = gameObject.AddComponent<HingeJoint>();
+                hj = gameObject.AddComponent<HingeJoint>();
+               
                 hj.connectedBody = collision.rigidbody;
                 _bodyPart.mass = 0.00001f;
                 _bodyPart.freezeRotation = true;
                 _bodyPart.velocity = Vector3.zero;
-
-
-               // _bodyPart = collision.gameObject.GetComponent<Rigidbody>();
-               // collision.gameObject.transform.parent = transform;
-               // _bodyPart.velocity = Vector3.zero;
-               // _bodyPart.angularVelocity = Vector3.zero;
-               //_bodyPart.isKinematic = true;
-               // holdBodypart = true;
             }
         }
     }
