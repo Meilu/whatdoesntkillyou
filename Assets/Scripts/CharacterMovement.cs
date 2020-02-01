@@ -21,9 +21,6 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //links en rechts ophalen
-        float moveInput = Input.GetAxisRaw("Horizontal");
-
         //als er niet gejumpt wordt links of rechts wandelen
         if (!_airTime)
         {
@@ -37,8 +34,6 @@ public class CharacterMovement : MonoBehaviour
                 _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
             }
 
-            //Vector3 newPosition = transform.position + (transform.right * moveInput) * speed;
-            //_rigidBody.MovePosition(newPosition);
             //if jump dan springen
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -46,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
                 _airTime = true;
             }
         }
+
         //als er wel gejumped wordt links en rechts als impuls verwerken
         if(_airTime)
         {
@@ -64,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //er kan weer gestuurd worden
+        //besturing na landing aanpassen
         _airTime = false;
     }
 }
