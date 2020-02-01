@@ -60,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        _animator.Play("Idle");
+        _animator.Play("idle");
     }
 
     private void OnCollisionEnter(Collision collision)
