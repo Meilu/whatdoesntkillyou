@@ -37,7 +37,11 @@ public class GhostMovement : MonoBehaviour
         //beweging omlaag
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            _rigidBody.AddForce(Vector3.down * speed, ForceMode.Impulse);
+           // if (!holdBodypart)
+            {
+                _rigidBody.AddForce(Vector3.down * speed, ForceMode.Impulse); 
+            }
+           
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -57,11 +61,20 @@ public class GhostMovement : MonoBehaviour
             if (!holdBodypart)
             {
                 _bodyPart = collision.gameObject.GetComponent<Rigidbody>();
-                collision.gameObject.transform.parent = transform;
+
+                var hj = gameObject.AddComponent<HingeJoint>();
+                hj.connectedBody = collision.rigidbody;
+                _bodyPart.mass = 0.00001f;
+                _bodyPart.freezeRotation = true;
                 _bodyPart.velocity = Vector3.zero;
-                _bodyPart.angularVelocity = Vector3.zero;
-                _bodyPart.isKinematic = true;
-                holdBodypart = true;
+
+
+               // _bodyPart = collision.gameObject.GetComponent<Rigidbody>();
+               // collision.gameObject.transform.parent = transform;
+               // _bodyPart.velocity = Vector3.zero;
+               // _bodyPart.angularVelocity = Vector3.zero;
+               //_bodyPart.isKinematic = true;
+               // holdBodypart = true;
             }
         }
     }
