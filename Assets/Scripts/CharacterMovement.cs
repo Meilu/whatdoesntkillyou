@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] float speed = 0.3f;
+    [SerializeField] float speed = 0.7f;
     [SerializeField] float jumpFactor = 8.0f;
     [SerializeField] float jumpLeftRightFactor = 0.3f;
 
@@ -27,8 +27,18 @@ public class CharacterMovement : MonoBehaviour
         //als er niet gejumpt wordt links of rechts wandelen
         if (!_airTime)
         {
-            Vector3 nieuwePositie = transform.position + (transform.right * moveInput) * speed;
-            _rigidBody.MovePosition(nieuwePositie);
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
+            }
+            //sprong naar rechts verwerken
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                _rigidBody.AddForce(Vector3.right * speed, ForceMode.Impulse);
+            }
+
+            //Vector3 newPosition = transform.position + (transform.right * moveInput) * speed;
+            //_rigidBody.MovePosition(newPosition);
             //if jump dan springen
             if (Input.GetKeyDown(KeyCode.Space))
             {
