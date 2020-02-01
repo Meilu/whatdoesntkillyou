@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+    [SerializeField] float speed = 0.3f;
+    [SerializeField] float jumpFactor = 2.0f;
 
     private Rigidbody _rigidBody;
 
@@ -19,15 +21,29 @@ public class CharacterMovement : MonoBehaviour
     {
         //links en rechts ophalen
         float moveInput = Input.GetAxisRaw("Horizontal");
-        //jump ophalen
-        if(Input.GetKey(KeyCode.Space))
-        {
-            _rigidBody.AddForce(Vector3.up * 2.0f, ForceMode.Impulse);
-        }
+        
+       
 
         //
-       Vector3 nieuwePositie = transform.position + (transform.right * moveInput) * 0.3f;
+       Vector3 nieuwePositie = transform.position + (transform.right * moveInput) * speed;
 
        _rigidBody.MovePosition(nieuwePositie);
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Jump-OK":
+                //jump ophalen
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    _rigidBody.AddForce(Vector3.up * jumpFactor, ForceMode.Impulse);
+                }
+                break;
+            
+            default:
+                break;
+        }
     }
 }
