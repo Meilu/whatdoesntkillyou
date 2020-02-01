@@ -26,8 +26,7 @@ public class CharacterMovement : MonoBehaviour
         //als er niet gejumpt wordt links of rechts wandelen
         if (!_airTime)
         {
-          
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+          if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
               // transform.rotation
               _animator.Play("walk");

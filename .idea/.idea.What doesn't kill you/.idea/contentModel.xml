@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="GhostMovement.cs" t="Include" />
           <e p="MountainPartController.cs" t="Include" />
         </e>
       </e>
