@@ -51,7 +51,7 @@ public class CharacterMovement : MonoBehaviour
         }
 
         //if jump dan springen
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !_airTime)
         {
             _animator.Play("jump");
             _rigidBody.AddForce(Vector3.up * jumpFactor, ForceMode.Impulse);
