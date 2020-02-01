@@ -53,6 +53,42 @@ ModelImporter:
     100094: transform33
     100096: transform34
     100098: transform35
+    100100: pCube27
+    100102: pCube28
+    100104: pCube29
+    100106: pCube30
+    100108: pCube31
+    100110: pCube32
+    100112: pCube33
+    100114: polySurface14
+    100116: polySurface15
+    100118: polySurface16
+    100120: polySurface17
+    100122: polySurface18
+    100124: polySurface19
+    100126: polySurface20
+    100128: polySurface21
+    100130: polySurface22
+    100132: polySurface23
+    100134: polySurface24
+    100136: transform57
+    100138: transform58
+    100140: transform59
+    100142: transform60
+    100144: transform61
+    100146: transform62
+    100148: transform63
+    100150: transform64
+    100152: transform65
+    100154: transform66
+    100156: transform67
+    100158: transform68
+    100160: transform69
+    100162: transform70
+    100164: transform71
+    100166: transform72
+    100168: transform73
+    100170: transform74
     400000: extrudedSurface1
     400002: extrudedSurface2
     400004: extrudedSurface3
@@ -103,13 +139,53 @@ ModelImporter:
     400094: transform33
     400096: transform34
     400098: transform35
+    400100: pCube27
+    400102: pCube28
+    400104: pCube29
+    400106: pCube30
+    400108: pCube31
+    400110: pCube32
+    400112: pCube33
+    400114: polySurface14
+    400116: polySurface15
+    400118: polySurface16
+    400120: polySurface17
+    400122: polySurface18
+    400124: polySurface19
+    400126: polySurface20
+    400128: polySurface21
+    400130: polySurface22
+    400132: polySurface23
+    400134: polySurface24
+    400136: transform57
+    400138: transform58
+    400140: transform59
+    400142: transform60
+    400144: transform61
+    400146: transform62
+    400148: transform63
+    400150: transform64
+    400152: transform65
+    400154: transform66
+    400156: transform67
+    400158: transform68
+    400160: transform69
+    400162: transform70
+    400164: transform71
+    400166: transform72
+    400168: transform73
+    400170: transform74
     2100000: phong4
     2100002: phong2
     2100004: phong7
     2100006: phong8
+    2100008: phong9
     2300000: pCube21
+    2300002: pCube33
     3300000: pCube21
+    3300002: pCube33
     4300000: pCube21
+    4300002: pCube33
   externalObjects: {}
   materials:
     importMaterials: 1
