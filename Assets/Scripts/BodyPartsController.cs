@@ -25,7 +25,7 @@ public class BodyPartsController : MonoBehaviour
         foreach (var child in allChildren)
         {
             var randomPosition = new Vector3(
-                Random.Range(-5.5f, 5.5f),
+                Random.Range(-1.5f, 1.5f),
                 Random.Range(0, 3.5f),
                 0);
 
