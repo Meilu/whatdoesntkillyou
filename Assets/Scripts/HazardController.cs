@@ -7,7 +7,7 @@ public class HazardController : MonoBehaviour
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == "MainCharacter")
         {
-            var bodyPartsController = collision.gameObject.GetComponent<BodyPartsController>();
+            var bodyPartsController = collision.gameObject.GetComponent<BodyPartsSpawnController>();
             bodyPartsController.SpawnBodyParts();
         }
     }

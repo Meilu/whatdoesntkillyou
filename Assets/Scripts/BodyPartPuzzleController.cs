@@ -1,17 +1,14 @@
-﻿using System.Threading;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BodyPartsController : MonoBehaviour
+public class BodyPartsPuzzleController : MonoBehaviour
 {
     private Rigidbody _rigidBody;
-    private Random _random;
 
     [SerializeField] GameObject bodyPrefab;
 
     public void Start()
     {
         _rigidBody = GetComponent<Rigidbody>();
-        _random = new Random();
     }
 
     public void SpawnBodyParts()
