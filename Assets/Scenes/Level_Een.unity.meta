@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Prefabs/MainBlock.prefab.meta
-guid: e67f5e3ba6a5e78498df57314937e13d
-PrefabImporter:
-=======
-guid: d3f1c91141b1caa4f812c3e3029d1ef4
+guid: d139ad22d60f71445ac9b7132faadbad
 DefaultImporter:
->>>>>>> 3aa44ccf87337bd941d992b287c63d6c5d7b31ec:Assets/Scenes/Level_Een.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
