@@ -33,7 +33,7 @@ public class CharacterMovement : MonoBehaviour
               _animator.Play("walk");
               _rigidBody.AddForce(Vector3.left * speed, ForceMode.Impulse);
             }
-            //sprong naar rechts verwerken
+            // naar rechts verwerken
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
               _animator.Play("walk");
