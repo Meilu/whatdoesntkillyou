@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 cameraPosition = new Vector3(playerRigidBody.transform.position.x, playerRigidBody.transform.position.y, cameraRigidBody.position.z);
+        var cameraPosition = new Vector3(playerRigidBody.transform.position.x, playerRigidBody.transform.position.y, cameraRigidBody.position.z);
         cameraRigidBody.MovePosition(cameraPosition);
     }
 }

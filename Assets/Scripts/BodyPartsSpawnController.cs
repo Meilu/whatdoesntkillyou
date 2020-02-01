@@ -23,7 +23,7 @@ public class BodyPartsSpawnController : MonoBehaviour
         {
             var randomPosition = new Vector3(
                 Random.Range(-25.5f, 25.5f),
-                Random.Range(0, 25.5f),
+                Random.Range(0, 50.0f),
                 0);
 
             child.AddForce(randomPosition, ForceMode.Impulse);
