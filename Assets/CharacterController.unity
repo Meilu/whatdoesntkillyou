@@ -663,6 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.3
   jumpFactor: 8
+  jumpLeftRightFactor: 0.3
 --- !u!1 &885045081
 GameObject:
   m_ObjectHideFlags: 0
