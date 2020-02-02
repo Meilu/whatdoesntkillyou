@@ -27,7 +27,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!1 &2427607512137437394
 GameObject:
@@ -126,7 +126,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!65 &3903279043905036844
 BoxCollider:
@@ -168,7 +168,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!65 &158959222715614996
 BoxCollider:
@@ -255,7 +255,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 72
   m_CollisionDetection: 0
 --- !u!65 &4512306080718777633
 BoxCollider:
