@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3bfbe200e504460bb1b1b03d43b28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyPartsExplosion: {fileID: 8300000, guid: a56d6579f4bef4a768b4e9c11df1345c, type: 3}
+  BodyPartsExplosion: {fileID: 8300000, guid: 8d9d809f9bfa8cc41b9d4ba3f1068750, type: 3}
 --- !u!82 &7132575280445128015
 AudioSource:
   m_ObjectHideFlags: 0

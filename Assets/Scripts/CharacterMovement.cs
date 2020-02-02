@@ -15,6 +15,9 @@ public class CharacterMovement : MonoBehaviour
   public AudioClip DestroyedSound;
   public AudioClip WalkSound;
 
+  public float backflipAnimationTimer = 2.0f;
+  public bool isAnimatingBackFlip = false;
+  
   // Start is called before the first frame update
   void Awake()
   {
@@ -26,13 +29,34 @@ public class CharacterMovement : MonoBehaviour
 
   void Start()
   {
+    backFlip();
+  }
+
+  public void backFlip()
+  {
     _animator.Play("backflip");
+    isAnimatingBackFlip = true;
+    InvokeRepeating("backFlipTimer", 1.0f, 1.0f);
+  }
+
+  public void backFlipTimer()
+  {
+    backflipAnimationTimer--;
+
+    if (backflipAnimationTimer == 0)
+    {
+      CancelInvoke();
+      isAnimatingBackFlip = false;
+      backflipAnimationTimer = 2.0f;
+    }
   }
   
-
   // Update is called once per frame
   void Update()
   {
+    if (isAnimatingBackFlip)
+      return;
+    
     var rotationInY = transform.rotation.y;
 
     //springen links tijdens het lopen verwerken
@@ -97,8 +121,8 @@ public class CharacterMovement : MonoBehaviour
       return;
     }
 
-
-    _animator.Play("bellydance");
+    
+      _animator.Play("bellydance");
   }
 
   private void PlayWalkingSound()
