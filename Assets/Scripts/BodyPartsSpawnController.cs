@@ -3,6 +3,7 @@
 public class BodyPartsSpawnController : MonoBehaviour
 {
     private Rigidbody _rigidBody;
+    private bool _bodyPartsExists;
 
     [SerializeField] GameObject bodyPrefab;
 
@@ -13,6 +14,9 @@ public class BodyPartsSpawnController : MonoBehaviour
 
     public void SpawnBodyParts()
     {
+        if (_bodyPartsExists)
+            return;
+
         var position = _rigidBody.position;
 
         Destroy(gameObject);
@@ -28,5 +32,7 @@ public class BodyPartsSpawnController : MonoBehaviour
 
             child.AddForce(randomPosition, ForceMode.Impulse);
         }
+
+        _bodyPartsExists = true;
     }
 }
