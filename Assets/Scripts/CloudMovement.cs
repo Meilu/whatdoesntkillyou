@@ -8,10 +8,12 @@ public class CloudMovement : MonoBehaviour
 
     void Start()
     {
-        var rigidBody = GetComponent<Rigidbody>();
+        var currentX = transform.position.x;
+        var currentY = transform.position.y;
+        var currentZ = transform.position.z;
 
-        _positiveXDirection = new Vector3(3.0f, rigidBody.position.y, rigidBody.position.z);
-        _negativeXDirection = new Vector3(-3.0f, rigidBody.position.y, rigidBody.position.z);
+        _positiveXDirection = new Vector3(currentX + 3.0f, currentY, currentZ);
+        _negativeXDirection = new Vector3(currentX - 3.0f, currentY, currentZ);
     }
 
     void Update()
