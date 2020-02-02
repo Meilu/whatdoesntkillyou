@@ -31,9 +31,10 @@ public class BodyPuzzle : MonoBehaviour
       var child = childrenTransforms.First(x => x.name == otherName);
       child.Find("renderer").GetComponent<Renderer>().enabled = true;
 
-      
+      Destroy(GameObject.Find("GhostMainChar").GetComponent<HingeJoint>());
       GameObject.Find("GhostMainChar").GetComponent<GhostMovement>().holdBodypart = false;
       Destroy(other.gameObject);
+      
       
       var enabledBodyparts = transform
         .GetComponentsInChildren<Renderer>()
