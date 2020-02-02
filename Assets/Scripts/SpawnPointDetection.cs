@@ -7,7 +7,7 @@ public class SpawnPointDetection : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.transform.parent.name == "character" && created == false)
+        if (other.transform.parent?.name == "character" && created == false)
         {
             var zcoordinate = transform.position.z - 1.0f;
             var ycoordinate = transform.position.y - 0.5f;
