@@ -4,21 +4,34 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField] GameObject character;
-    Rigidbody playerRigidBody;
+    public GameObject character;
+    Rigidbody rigidBodyToFollow;
     Rigidbody cameraRigidBody;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        playerRigidBody = character.GetComponent<Rigidbody>();
-        cameraRigidBody = GetComponent<Rigidbody>();
+      SetGameobjectToFollow(character);
+      cameraRigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 cameraPosition = new Vector3(playerRigidBody.transform.position.x, playerRigidBody.transform.position.y, cameraRigidBody.position.z);
-        cameraRigidBody.MovePosition(cameraPosition);
+      if (rigidBodyToFollow == null)
+        return;
+      
+      Vector3 cameraPosition = new Vector3(rigidBodyToFollow.transform.position.x, rigidBodyToFollow.transform.position.y, cameraRigidBody.position.z);
+      cameraRigidBody.MovePosition(cameraPosition);
+    }
+
+    public void SetGameobjectToFollow(GameObject go)
+    {
+      var rb = go.GetComponent<Rigidbody>();
+
+      if (rb == null)
+        return;
+
+      rigidBodyToFollow = rb;
     }
 }

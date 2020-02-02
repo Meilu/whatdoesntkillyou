@@ -6,10 +6,16 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="GameStateController.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="BodyPartsSpawnController.cs" t="Include" />
+          <e p="bodyPuzzle.cs" t="Include" />
+          <e p="CameraMovement.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="CloudMovement.cs" t="Include" />
           <e p="GhostMovement.cs" t="Include" />
-          <e p="MountainPartController.cs" t="Include" />
+          <e p="HazardController.cs" t="Include" />
+          <e p="SunMovement.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
