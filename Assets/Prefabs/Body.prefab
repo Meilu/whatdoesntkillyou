@@ -27,7 +27,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!1 &2427607512137437394
 GameObject:
@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 2081172108377243519}
   - component: {fileID: 2959462110560160236}
   - component: {fileID: 9523347908280147}
+  - component: {fileID: 7510796228245351770}
+  - component: {fileID: 7132575280445128015}
   m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
@@ -112,6 +114,115 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7510796228245351770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427607512137437394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3bfbe200e504460bb1b1b03d43b28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BodyPartsExplosion: {fileID: 8300000, guid: a56d6579f4bef4a768b4e9c11df1345c, type: 3}
+--- !u!82 &7132575280445128015
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427607512137437394}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!54 &6146308455212830921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,7 +237,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!65 &3903279043905036844
 BoxCollider:
@@ -168,7 +279,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!65 &158959222715614996
 BoxCollider:
@@ -197,7 +308,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!65 &2959124610616063474
 BoxCollider:
@@ -239,7 +350,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!54 &4702082655770671290
 Rigidbody:
@@ -255,7 +366,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 104
   m_CollisionDetection: 0
 --- !u!65 &4512306080718777633
 BoxCollider:
@@ -1028,6 +1139,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df87a9b344f82a44a91abf99d2bc8b06, type: 3}
+--- !u!4 &8208140926948936504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: df87a9b344f82a44a91abf99d2bc8b06,
+    type: 3}
+  m_PrefabInstance: {fileID: 8208140926949069240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8208140926949037908 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100076, guid: df87a9b344f82a44a91abf99d2bc8b06,
@@ -1037,12 +1154,6 @@ GameObject:
 --- !u!1 &8208140926949037848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: df87a9b344f82a44a91abf99d2bc8b06,
-    type: 3}
-  m_PrefabInstance: {fileID: 8208140926949069240}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8208140926948936504 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: df87a9b344f82a44a91abf99d2bc8b06,
     type: 3}
   m_PrefabInstance: {fileID: 8208140926949069240}
   m_PrefabAsset: {fileID: 0}

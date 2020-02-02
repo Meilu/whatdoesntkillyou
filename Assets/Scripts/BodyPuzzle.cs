@@ -6,11 +6,15 @@ using UnityEngine;
 
 public class BodyPuzzle : MonoBehaviour
 {
+  public AudioClip BodyPlop;
+  private AudioSource _audioSource;
+
   public GameObject characterPrefab;
     // Start is called before the first frame update
     void Start()
     {
-        
+      _audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -35,7 +39,7 @@ public class BodyPuzzle : MonoBehaviour
       GameObject.Find("GhostMainChar").GetComponent<GhostMovement>().holdBodypart = false;
       Destroy(other.gameObject);
       
-      
+      _audioSource.PlayOneShot(BodyPlop, 2.0F);
       var enabledBodyparts = transform
         .GetComponentsInChildren<Renderer>()
         .Count(x => x.enabled);
