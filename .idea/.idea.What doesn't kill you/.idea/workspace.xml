@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b67e32a6-c3ca-468e-ae98-734d72b25ea7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FinishDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FinishDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/backgroundsound.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/backgroundsound.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/MenuButtonController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="158">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <marker date="1580639898249" expanded="false" signature="6:113" ph="..." />
                 <marker date="1580639898249" expanded="true" signature="164:431" ph="{...}" />
@@ -84,17 +84,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/FinishDetection.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
-              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
-                <marker date="1580653614433" expanded="true" signature="6:32" ph="..." />
-                <marker date="1580653614433" expanded="true" signature="78:729" ph="{...}" />
-                <marker date="1580653614433" expanded="true" signature="212:274" ph="{...}" />
-                <marker date="1580653614433" expanded="true" signature="322:727" ph="{...}" />
-                <marker date="1580653614433" expanded="true" signature="384:721" ph="{...}" />
+                <marker date="1580653801894" expanded="true" signature="6:32" ph="..." />
+                <marker date="1580653801894" expanded="true" signature="78:746" ph="{...}" />
+                <marker date="1580653801894" expanded="true" signature="212:274" ph="{...}" />
+                <marker date="1580653801894" expanded="true" signature="322:744" ph="{...}" />
+                <marker date="1580653801894" expanded="true" signature="384:738" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -259,7 +259,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20479000" />
+    <option name="totallyTimeSpent" value="21261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,20 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MenuButtonController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <marker date="1580639898249" expanded="false" signature="6:113" ph="..." />
-            <marker date="1580639898249" expanded="true" signature="164:431" ph="{...}" />
-            <marker date="1580639898249" expanded="true" signature="263:316" ph="{...}" />
-            <marker date="1580639898249" expanded="true" signature="344:382" ph="{...}" />
-            <marker date="1580639898249" expanded="true" signature="410:429" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FlagDetection.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -537,13 +523,27 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FinishDetection.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <marker date="1580653614433" expanded="true" signature="6:32" ph="..." />
-            <marker date="1580653614433" expanded="true" signature="78:729" ph="{...}" />
-            <marker date="1580653614433" expanded="true" signature="212:274" ph="{...}" />
-            <marker date="1580653614433" expanded="true" signature="322:727" ph="{...}" />
-            <marker date="1580653614433" expanded="true" signature="384:721" ph="{...}" />
+            <marker date="1580653801894" expanded="true" signature="6:32" ph="..." />
+            <marker date="1580653801894" expanded="true" signature="78:746" ph="{...}" />
+            <marker date="1580653801894" expanded="true" signature="212:274" ph="{...}" />
+            <marker date="1580653801894" expanded="true" signature="322:744" ph="{...}" />
+            <marker date="1580653801894" expanded="true" signature="384:738" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MenuButtonController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <marker date="1580639898249" expanded="false" signature="6:113" ph="..." />
+            <marker date="1580639898249" expanded="true" signature="164:431" ph="{...}" />
+            <marker date="1580639898249" expanded="true" signature="263:316" ph="{...}" />
+            <marker date="1580639898249" expanded="true" signature="344:382" ph="{...}" />
+            <marker date="1580639898249" expanded="true" signature="410:429" ph="{...}" />
           </folding>
         </state>
       </provider>
