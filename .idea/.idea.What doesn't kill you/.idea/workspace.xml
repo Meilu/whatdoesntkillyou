@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b67e32a6-c3ca-468e-ae98-734d72b25ea7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.What doesn't kill you/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.What doesn't kill you/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_WhiteGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/M_WhiteGlow.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Texture/M_BookPage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Texture/M_BookPage.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Body.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Body.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/character.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BodyPuzzle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BodyPuzzle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animations/Big Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animations/Big Jump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animations/characterAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animations/characterAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bodypartsaudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bodypartsaudio.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,46 +31,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FlagDetection.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding>
-                <marker date="1580638246603" expanded="true" signature="62:401" ph="{...}" />
-                <marker date="1580638246603" expanded="true" signature="179:399" ph="{...}" />
-                <marker date="1580638246603" expanded="true" signature="261:393" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="23" column="47" selection-start-line="23" selection-end-line="24" />
+            <state relative-caret-position="134">
+              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
               <folding>
-                <marker date="1580645664710" expanded="false" signature="6:78" ph="..." />
-                <marker date="1580645664710" expanded="true" signature="126:3232" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="542:787" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="841:2966" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="1069:1317" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="1433:1796" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="1978:2227" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="2327:2664" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="2746:2926" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="3001:3107" ph="{...}" />
-                <marker date="1580645664710" expanded="true" signature="3163:3230" ph="{...}" />
+                <marker date="1580647977086" expanded="false" signature="6:78" ph="..." />
+                <marker date="1580647977086" expanded="true" signature="126:3232" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="542:787" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="841:2966" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="1069:1317" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="1433:1796" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="1978:2227" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="2327:2664" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="2746:2926" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="3001:3107" ph="{...}" />
+                <marker date="1580647977086" expanded="true" signature="3163:3230" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BodyPartsSpawnController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="135">
               <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding>
                 <marker date="1580647688651" expanded="true" signature="73:918" ph="{...}" />
@@ -92,13 +71,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/bodypartsaudio.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="118">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
               <folding>
-                <marker date="1580647552273" expanded="false" signature="6:78" ph="..." />
-                <marker date="1580647552273" expanded="true" signature="123:481" ph="{...}" />
-                <marker date="1580647552273" expanded="true" signature="279:400" ph="{...}" />
-                <marker date="1580647552273" expanded="true" signature="458:479" ph="{...}" />
+                <marker date="1580647942088" expanded="false" signature="6:78" ph="..." />
+                <marker date="1580647942088" expanded="true" signature="123:481" ph="{...}" />
+                <marker date="1580647942088" expanded="true" signature="279:400" ph="{...}" />
+                <marker date="1580647942088" expanded="true" signature="458:479" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,7 +122,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BF5F45F9-036E-4C62-A663-0FF0AD516D88/17/e422b025/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GhostMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BodyPartsSpawnController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FlagDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MenuButtonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -157,10 +135,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/GameStateController.cs" />
         <option value="$PROJECT_DIR$/Assets/MenuButtonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BodyPuzzle.cs" />
-        <option value="$PROJECT_DIR$/Assets/bodypartsaudio.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BodyPartsSpawnController.cs" />
+        <option value="$PROJECT_DIR$/Assets/bodypartsaudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
       </list>
     </option>
   </component>
@@ -259,7 +237,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17772000" />
+    <option name="totallyTimeSpent" value="18221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,11 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <marker date="1580638246603" expanded="true" signature="62:401" ph="{...}" />
-            <marker date="1580638246603" expanded="true" signature="179:399" ph="{...}" />
-            <marker date="1580638246603" expanded="true" signature="261:393" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,48 +450,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="23" column="47" selection-start-line="23" selection-end-line="24" />
-          <folding>
-            <marker date="1580645664710" expanded="false" signature="6:78" ph="..." />
-            <marker date="1580645664710" expanded="true" signature="126:3232" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="542:787" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="841:2966" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="1069:1317" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="1433:1796" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="1978:2227" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="2327:2664" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="2746:2926" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="3001:3107" ph="{...}" />
-            <marker date="1580645664710" expanded="true" signature="3163:3230" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/bodypartsaudio.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <marker date="1580647552273" expanded="false" signature="6:78" ph="..." />
-            <marker date="1580647552273" expanded="true" signature="123:481" ph="{...}" />
-            <marker date="1580647552273" expanded="true" signature="279:400" ph="{...}" />
-            <marker date="1580647552273" expanded="true" signature="458:479" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BodyPartsSpawnController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="135">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <marker date="1580647688651" expanded="true" signature="73:918" ph="{...}" />
             <marker date="1580647688651" expanded="true" signature="214:274" ph="{...}" />
             <marker date="1580647688651" expanded="true" signature="308:916" ph="{...}" />
             <marker date="1580647688651" expanded="true" signature="641:876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/bodypartsaudio.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <marker date="1580647942088" expanded="false" signature="6:78" ph="..." />
+            <marker date="1580647942088" expanded="true" signature="123:481" ph="{...}" />
+            <marker date="1580647942088" expanded="true" signature="279:400" ph="{...}" />
+            <marker date="1580647942088" expanded="true" signature="458:479" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+          <folding>
+            <marker date="1580647977086" expanded="false" signature="6:78" ph="..." />
+            <marker date="1580647977086" expanded="true" signature="126:3232" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="542:787" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="841:2966" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="1069:1317" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="1433:1796" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="1978:2227" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="2327:2664" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="2746:2926" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="3001:3107" ph="{...}" />
+            <marker date="1580647977086" expanded="true" signature="3163:3230" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -7325,6 +7325,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.0017345987
       objectReference: {fileID: 0}
+    - target: {fileID: 6458285095992937487, guid: 74bf603eb586e4fb2b066dbbf58795c1,
+        type: 3}
+      propertyPath: BodyPartsExplosion
+      value: 
+      objectReference: {fileID: 8300000, guid: a56d6579f4bef4a768b4e9c11df1345c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74bf603eb586e4fb2b066dbbf58795c1, type: 3}
 --- !u!1 &541676481 stripped
@@ -20418,7 +20423,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dd662775ccf1ea142bce115982cd00b2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.12
+  m_Volume: 0.39
   m_Pitch: 1
   Loop: 1
   Mute: 0

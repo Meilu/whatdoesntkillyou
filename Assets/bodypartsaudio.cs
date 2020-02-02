@@ -11,7 +11,7 @@ public class bodypartsaudio : MonoBehaviour
     void Start()
     {
       _audioSource = GetComponent<AudioSource>();
-      _audioSource.PlayOneShot(BodyPartsExplosion, 3.0F);
+      _audioSource.PlayOneShot(BodyPartsExplosion, 1.5F);
 
     }
 

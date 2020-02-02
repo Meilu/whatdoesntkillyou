@@ -24,6 +24,12 @@ public class CharacterMovement : MonoBehaviour
     _audioSource = GetComponent<AudioSource>();
   }
 
+  void Start()
+  {
+    _animator.Play("backflip");
+  }
+  
+
   // Update is called once per frame
   void Update()
   {
@@ -100,7 +106,7 @@ public class CharacterMovement : MonoBehaviour
     if (_audioSource.isPlaying)
       return;
     
-    _audioSource.PlayOneShot(WalkSound, 2.0F);
+    _audioSource.PlayOneShot(WalkSound, 7.0F);
   }
   
   private void OnCollisionEnter(Collision collision)

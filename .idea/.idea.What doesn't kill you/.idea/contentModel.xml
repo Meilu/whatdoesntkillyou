@@ -16,9 +16,10 @@
           <e p="CameraMovement.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="CloudMovement.cs" t="Include" />
-          <e p="FlagDetection.cs" t="Include" />
+          <e p="FinishDetection.cs" t="Include" />
           <e p="GhostMovement.cs" t="Include" />
           <e p="HazardController.cs" t="Include" />
+          <e p="SpawnPointDetection.cs" t="Include" />
           <e p="SunMovement.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
