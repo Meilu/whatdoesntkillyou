@@ -405,6 +405,8 @@ GameObject:
   - component: {fileID: 2274408869503475834}
   - component: {fileID: 2274408869506900068}
   - component: {fileID: 2274408869505901220}
+  - component: {fileID: 945722664463568694}
+  - component: {fileID: 2336496748684966611}
   m_Layer: 0
   m_Name: polySurface9
   m_TagString: Untagged
@@ -473,6 +475,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &945722664463568694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274408869503908890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25748014, y: 0.2807689, z: 0.19360597}
+  m_Center: {x: -3.755438e-11, y: -0.000000011920929, z: 0.009676642}
+--- !u!114 &2336496748684966611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274408869503908890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edaaa5fe126c714cbd2099e2b344b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyPuzzlePrefab: {fileID: 8814478367586832537, guid: 229c9222e048b45418237273a6b615a2,
+    type: 3}
 --- !u!1 &2274408869503908892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2274408869503475804}
+  - component: {fileID: 8832228531383237375}
   m_Layer: 0
   m_Name: SpawnPointStand
   m_TagString: Untagged
@@ -1131,6 +1161,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 183.56898, z: 0}
+--- !u!114 &8832228531383237375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274408869503908988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9edaaa5fe126c714cbd2099e2b344b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyPuzzlePrefab: {fileID: 8814478367586832537, guid: 229c9222e048b45418237273a6b615a2,
+    type: 3}
 --- !u!1 &2274408869503908990
 GameObject:
   m_ObjectHideFlags: 0
