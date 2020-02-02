@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BodyPuzzle : MonoBehaviour
 {
+  public GameObject characterPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,33 @@ public class BodyPuzzle : MonoBehaviour
       var childrenTransforms = transform.GetComponentsInChildren<Transform>();
       var child = childrenTransforms.First(x => x.name == otherName);
       child.Find("renderer").GetComponent<Renderer>().enabled = true;
-    Destroy(other.gameObject);
+
+      
+      GameObject.Find("GhostMainChar").GetComponent<GhostMovement>().holdBodypart = false;
+      Destroy(other.gameObject);
+      
+      var enabledBodyparts = transform
+        .GetComponentsInChildren<Renderer>()
+        .Count(x => x.enabled);
+      
+      if (enabledBodyparts == 6)
+      {
+        var childRenderers = transform.GetComponentsInChildren<Renderer>();
+        foreach (var childRenderer in childRenderers)
+        {
+          childRenderer.enabled = false;
+        }
+        
+        Debug.Log("karakter is klaar met bouwen");
+        
+        GameObject.Find("GhostMainChar").SetActive(false);
+        var newCharacter = Instantiate(characterPrefab);
+        newCharacter.transform.position = transform.position;
+        newCharacter.name = "character";
+        GameObject.Find("GameStateController").GetComponent<GameStateController>().characterJumpFactor += 2.0f;
+        
+        GameObject.Find("Camera").GetComponent<CameraMovement>().SetGameobjectToFollow(newCharacter);
+        
+      }
     }
 }

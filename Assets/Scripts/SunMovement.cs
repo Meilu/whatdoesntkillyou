@@ -4,7 +4,7 @@ public class SunMovement : MonoBehaviour
 {
     [SerializeField] GameObject camera;
     private Rigidbody _cameraRigidBody;
-
+    
     // Start is called before the first frame update
     void Start()
     {

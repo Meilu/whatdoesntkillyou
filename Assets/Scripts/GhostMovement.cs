@@ -8,7 +8,7 @@ public class GhostMovement : MonoBehaviour
 
   private Rigidbody _rigidBody;
   private Rigidbody _bodyPart;
-  private bool holdBodypart;
+  public bool holdBodypart;
   private HingeJoint hj;
 
   // Start is called before the first frame update
